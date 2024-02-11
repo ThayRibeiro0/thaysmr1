@@ -15,6 +15,7 @@ Currently, two official plugins are available:
 ### `npm install react-bootstrap bootstrap`
 ### `npm i --save @fortawesome/fontawesome-svg-core `
 ### `npm install --save @fortawesome/free-solid-svg-icons`
+### `npm i --save npm i --save @fortawesome/free-brands-svg-icons`
 ### `npm install --save @fortawesome/react-fontawesome`
 ### `npm i react-type-animation`
 ### `npm i swiper`
