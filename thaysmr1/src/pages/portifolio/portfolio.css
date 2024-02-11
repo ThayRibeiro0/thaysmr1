@@ -1,0 +1,332 @@
+
+.portifoliocontainer{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    columns: 2;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.title1{
+  font-weight: 500;
+  font-size: 50px;
+  background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 7s infinite linear;
+}
+
+.text11{
+  font-size: 20px;
+}
+
+.titleportifolio {
+    align-content: center;
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+.todo{
+    display: flex;
+    width: 65%;
+    background-color: transparent;
+}
+
+.portifoliocontainer .swiper {
+    margin-top: -47px;
+    margin-left: -110px;
+    /* max-width: 100%; */
+    width: 600px;
+    height: 1000px;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+.portifoliocontainer .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+.portifoliocontainer .swiper-slide:nth-child(1n) {
+    background-color: black;
+    width: 80%;
+    height: 70%;
+    right: 120%;
+  }
+  
+  .portifoliocontainer  .swiper-slide:nth-child(1n) {
+    background-color: black;
+  }
+
+  .portifoliocontainer  .swiper-slide:nth-child(2n) {
+    background-color: gray;
+  }
+  
+  .portifoliocontainer .swiper-slide:nth-child(3n) {
+    background-color: black;
+  }
+  
+  .portifoliocontainer  .swiper-slide:nth-child(4n) {
+    background-color: gray;
+  }
+  
+  .portifoliocontainer .swiper-slide:nth-child(5n) {
+    background-color: black;
+  }
+  
+  .portifoliocontainer .swiper-slide:nth-child(6n) {
+    background-color: gray;
+  }
+  
+  .portifoliocontainer .swiper-slide:nth-child(7n) {
+    background-color:black;
+  }
+  
+  .portifoliocontainer .swiper-slide:nth-child(8n) {
+    background-color: gray;
+  }
+  
+  .portifoliocontainer .swiper-slide:nth-child(9n) {
+    background-color: black;
+  }
+  
+  .portifoliocontainer .swiper-slide:nth-child(10n) {
+    background-color: gray;
+  }
+
+  .portifoliocontainer .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+
+  .content1{
+    margin-right: 2%;
+  }
+  .content1 h3{
+    font-size: 26px;
+  }
+  .content1 p{
+    font-size: 19px;
+    font-weight: 500;
+    margin-right: 10%;
+    font-weight: 100;
+  }
+  .content2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+  }
+  .content2 h3{
+    font-size: 26px;
+  }
+  .content2 p{
+    font-size: 19px;
+    font-weight: 100;
+  }
+  .content3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+  }
+  .content3 h3{
+    font-size: 26px;
+  }
+  .content3 p{
+    font-size: 19px;
+    font-weight: 500;
+    margin-right: 10%;
+    font-weight: 100;
+  }
+  .content4{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+  }
+  .content4 h3{
+    font-size: 26px;
+  }
+  .content4 p{
+    font-size: 19px;
+    font-weight: 500;
+    margin-right: 10%;
+    font-weight: 100;
+  }
+  .content5{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+  }
+  .content5 h3{
+    font-size: 26px;
+  }
+  .content5 p{
+    font-size: 19px;
+    font-weight: 500;
+    margin-right: 10%;
+    font-weight: 100;
+  }
+  .content6{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+  }
+  .content6 h3{
+    font-size: 26px;
+  }
+  .content6 p{
+    font-size: 19px;
+    font-weight: 500;
+    margin-right: 10%;
+    font-weight: 100;
+  }
+
+  .linkcss{
+    margin-top: 30%;
+  }
+
+  a.link{
+    font-size: 15px;
+    margin-right: 10%;
+    font-weight: 100;
+    text-decoration: none; 
+    color: white;
+    border: 1px solid;
+    padding: 5%;
+    font-weight: 500;
+    border-radius: 5%;
+    
+  }
+
+  .textoColorido{
+    color: pink;
+    font-weight: 500;
+  }
+  .textoColorido1{
+    color: greenyellow;
+    font-weight: 500;
+  }
+  .textoColorido2{
+    color: rgb(0, 191, 255);
+    font-weight: 500;
+  }
+  .textoColorido3{
+    color: orange;
+    font-weight: 500;
+  }
+  .textoColorido4{
+    color: plum;
+    font-weight: 500;
+  }
+  .textoColorido5{
+    color: rgb(240, 117, 89);
+    font-weight: 500;
+  }
+  .textoColorido6{
+    color: rgb(0, 255, 208);
+    font-weight: 500;
+  }
+  .textoColorido7{
+    color: rgb(102, 25, 65);
+    font-weight: 500;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 600px;
+    }
+    100% {
+      background-position: 600px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+  .portifoliocontainer{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    columns: 1;
+
+  }
+  .todo{
+      flex-wrap: wrap;
+  }
+
+  .portifoliocontainer .swiper {
+    margin-top: -47px;
+    margin-left: -110px;
+    width: 290px;
+    height: 900px;
+    padding: 0;
+    margin: 0.5rem;
+  }
+  .swiper-wrapper{
+    display: 0;
+  }  
+  .title1{
+    margin-top: 1%;
+    font-size: 26px;
+  }
+
+  .text11{
+    font-size: 15px;
+  }
+
+  .content1 h3{
+    font-size: 20px;
+  }
+  .content1 p{
+    font-size: 12px;
+  }
+
+  .content2 h3{
+    font-size: 20px;
+  }
+  .content2 p{
+    font-size: 12px;
+  }
+
+  .content3 h3{
+    font-size: 20px;
+  }
+  .content3 p{
+    font-size: 12px;
+  }
+
+  .content4 h3{
+    font-size: 20px;
+  }
+  .content4 p{
+    font-size: 12px;
+  }
+  .content5 h3{
+    font-size: 20px;
+  }
+  .content5 p{
+    font-size: 12px;
+  }
+  .content6 h3{
+    font-size: 20px;
+  }
+  .content6 p{
+    font-size: 12px;
+  }
+
+
+  }

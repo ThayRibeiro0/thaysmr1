@@ -1,0 +1,106 @@
+
+.containerabout {
+  max-width: 100%;
+  height: 100%;
+  padding: 15%;
+  content: ''; 
+  margin-top: -27%;
+  height: 130vh;
+  display: flex;
+}
+
+.subBoxText .introduction{
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom, #5b0e0e, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 5vw;
+  font-family: "Source Sans Pro", sans-serif;
+  animation: reveal 1000ms ease-in-out forwards 100ms,
+             glow 1500ms linear infinite 2000ms;
+
+}  
+
+@keyframes reveal {
+  80%{
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #ca8181;
+  }
+}
+
+
+
+.subBoxText {
+  margin-top: 25%;
+  text-align: right;
+  width: 100%; 
+  margin-left: 14%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  border-top: 1px dashed;
+  border-radius: 1%;
+  font-weight: 500;
+  padding: 6%;
+  z-index: 1;
+}
+
+
+ .pic {
+  position: absolute;
+  margin-top: 15%;
+  transform: translate(-38%, 0%);
+  width: 20vw;
+  border-radius: 50%;
+  height: auto;
+  z-index: 1;
+ }
+
+ .url{
+  opacity: 0.5;
+ }
+
+ @keyframes animatedBackground {
+  to {
+      background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .subBoxText {
+    margin-top: 30%;
+    text-align: right;
+    width: 100%; 
+    margin-left: 14%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    border-top: 1px dashed;
+    border-radius: 1%;
+    font-weight: 500;
+    padding: 6%;
+    z-index: 1;
+  }
+  .pic {
+    position: absolute;
+    margin-top: 20%;
+    transform: translate(-38%, 0%);
+    width: 20vw;
+    border-radius: 50%;
+    height: auto;
+    z-index: 1;
+   }
+}
