@@ -21,6 +21,9 @@ Currently, two official plugins are available:
 ### `npm i swiper`
 ### `npm install emailjs-com`
 ### `npm i gh-pages -save-dev`
+### `npm install @react-three/drei`
+### `npm i gh-pages -save-dev`
+### `npm run build`
 
 ## Expanding the ESLint configuration
 
