@@ -59,7 +59,8 @@
 
 @media screen and (max-width: 768px) {
     .contact-form-container{
-        margin-left: -150px;
+        margin-left: 0;
+        margin-right: 155px;
         font-size: 12px;
         margin-top: -10%;
 
