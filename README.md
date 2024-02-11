@@ -56,6 +56,7 @@ base: "/repositoryname"
 after this run `npm run deploy` if run without error works, then its only go to github pages and wait appear the link and you can share your project with others users.
 
 Check my project: 
+By netlify: https://startling-pavlova-e998b6.netlify.app/
 
 ## Referencia
 
