@@ -1,0 +1,164 @@
+.nav {
+    position: relative;
+    z-index: 99
+}
+
+.nav__menu {
+position: absolute;
+margin-left: 0.75rem;
+margin-right: 0.75rem;
+left: -105%;
+width: 50%;
+max-width: 230px;
+min-width: 230px;
+margin-left: 40%;
+background: linear-gradient(to right, rgb(30, 11, 12), rgb(163, 158, 158));
+display: table-cell;
+border-radius: 0.5rem;
+top: -1rem;
+z-index: 1;
+padding: 10px 16px;
+overflow: hidden;
+transition: all 0.9s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+}
+
+.show-menu{
+left: 0;
+}
+
+.nav__link {
+display: flex;
+align-items: center;
+text-decoration: none;
+column-gap: 24px;
+justify-content: center;
+padding-block: 14px;
+}
+
+.nav__icon,
+.nav__name {
+color: white;
+}
+
+.nav__name {
+font-weight: 500;
+text-decoration: none;
+}
+
+.active-nav .nav__icon,
+.active-nav .nav__name {
+color: white;
+}
+
+/* menu */
+.nav__toggle {
+position: absolute;
+cursor: pointer;
+top: -50px;
+right: 30px;
+width: 40px;
+height: 40px;
+border-radius: 5px;
+padding: 12px 10px;
+}
+
+
+
+.nav__toggle span {
+display: block;
+width: 20px;
+height: 2px;
+border-radius: 2px;
+background-color: black;
+margin-bottom: 5px;
+}
+
+.animate-toggle span:first-child {
+transform: rotate(45deg) translate(6px, 4px);
+}
+
+.animate-toggle span:nth-child(2) {
+display: none;
+}
+
+.animate-toggle span:last-child {
+transform: rotate(-45deg) translate(1px, 1px);
+}
+
+
+@media screen and (min-width: 1024px) {
+
+.nav__menu{
+    all: unset;
+}
+
+.nav__toggle{
+    display: none;
+}
+
+.nav {
+    position: fixed;
+    inset-block: 0;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin-block: 20px;
+    list-style-type: none;
+}
+
+.nav__link {
+    padding: 0;
+    border-bottom: none;
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.nav__icon {
+    font-size: 20px;
+    margin-inline: auto;
+}
+
+.nav__name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(30, 11, 12);
+    height: 100%;
+    line-height: 50px;
+    padding-inline: 30px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.nav__link:hover .nav__name {
+    right: 27px;
+    color: white;
+    opacity: 1;
+    visibility: visible;
+    border-radius: 30px 0 0 30px;
+}
+
+.nav__link:hover,
+.active-nav {
+    background-color: rgb(30, 11, 12) ;
+}
+
+.nav__link:hover .nav__icon,
+.active-nav .nav__icon {
+    color: white;
+}
+
+
+}
