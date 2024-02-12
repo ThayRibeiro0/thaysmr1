@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './socialIcons.css';
-import Pdf from '../../src/assets/PDF.pdf'
+import Pdf from '../../src/assets/1- Thays Ribeiro Maher.pdf'
 
 import { Container } from 'react-bootstrap';
 
