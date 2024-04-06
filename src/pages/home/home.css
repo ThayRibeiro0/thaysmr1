@@ -170,6 +170,11 @@ div.hireme:hover {
     transform: scale(1.05);
 } 
 
+div.hireme a{
+    color: white;
+    text-decoration: none;
+}
+
 .content-people{
     padding: 0;
     align-items: 'center';
@@ -177,6 +182,10 @@ div.hireme:hover {
     height: 200;
     margin-top: 50px;
     cursor: 'pointer'
+}
+
+.contentvideo h1 a{
+    padding: 10px;
 }
 
 @media screen and (max-width: 768px) {

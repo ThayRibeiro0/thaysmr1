@@ -1,6 +1,7 @@
 import './home.css'
 // import { motion } from 'framer-motion'
 import background from '../../assets/backvideo.mp4';
+import Pdf from '../../assets/1- Thays Ribeiro Maher.pdf'
 // import Navbar from '../../components/Navbar'; // Import your Navbar component
 import ComputersCanvas from './gltf/Computers'
 // import { center } from 'maath/dist/declarations/src/buffer';
@@ -36,7 +37,7 @@ const Home = () => {
         <ComputersCanvas />
       </div>
       <div className='hireme'>
-          <a className='buttonhireme' href='/contact'>Hire me</a>
+          <a href= {Pdf} target = "_blank">Hime me</a>
       </div>
     </section>
   );
