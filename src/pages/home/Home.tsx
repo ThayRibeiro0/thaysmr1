@@ -1,14 +1,16 @@
-import './home.css'
-// import { motion } from 'framer-motion'
+import React, { useState } from 'react';
+import './home.css';
 import background from '../../assets/backvideo.mp4';
-import Pdf from '../../assets/1- Thays Ribeiro Maher.pdf'
-// import Navbar from '../../components/Navbar'; // Import your Navbar component
-import ComputersCanvas from './gltf/Computers'
-// import { center } from 'maath/dist/declarations/src/buffer';
+import ComputersCanvas from './gltf/Computers';
 import { TypeAnimation } from "react-type-animation";
 
-
 const Home = () => {
+  const [showVideoPopup, setShowVideoPopup] = useState(false);
+
+  const toggleVideoPopup = () => {
+    setShowVideoPopup(!showVideoPopup);
+  };
+
   return (
     <section className='home-container'>
       <div className='video-container'>
@@ -17,9 +19,9 @@ const Home = () => {
         </video>
       </div>
       <div className='content-text'>
-          <h1 className='content12'><span className='myname'>&nbsp;THAYS RIBEIRO MAHER</span></h1>
-          <p className='typeanimation'>
-            <TypeAnimation
+        <h1 className='content12'><span className='myname'>&nbsp;THAYS RIBEIRO MAHER</span></h1>
+        <p className='typeanimation'>
+          <TypeAnimation
             sequence={[
               "🇧🇷 Lawyer ⚖",
               1000,
@@ -31,14 +33,33 @@ const Home = () => {
             speed={50}
             repeat={Infinity}
             style={{ fontSize: '2em' }}
-          /></p><br/>
+          />
+        </p>
+        <br/>
       </div>
       <div className='content-people'>
         <ComputersCanvas />
       </div>
       <div className='hireme'>
-          <a href= {Pdf} target = "_blank">Hime me</a>
+        <button onClick={toggleVideoPopup}>👇🏽 Watch 👇🏽</button>
       </div>
+
+      {showVideoPopup && (
+        <div className='video-popup-overlay'>
+          <div className='video-popup'>
+            <button onClick={toggleVideoPopup} className='close-btn'>Close</button>
+            <iframe
+              width='560'
+              height='315'
+              src='https://www.youtube.com/embed/0rvSRe5ZmUY?si=2Id1QVYxN1ZYc-HZ'
+              title='YouTube video player'
+              frameBorder='100'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
