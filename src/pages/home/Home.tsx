@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './home.css';
 import background from '../../assets/backvideo.mp4';
 import ComputersCanvas from './gltf/Computers';
