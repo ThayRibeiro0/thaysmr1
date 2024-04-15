@@ -14,7 +14,7 @@ export const SocialIcons = () => {
     <div>
         <Container className='socialicons'>
             <div className='singleCol social-media-icons-white d-flex justify-content-evenly'>
-                <a href='https://www.linkedin.com/in/thays-moia-ribeiro-475b39275/'>
+                <a href='https://www.linkedin.com/in/thays-ribeiro-maher-475b39275/'>
                     <FontAwesomeIcon className='icon' icon={faLinkedin} />
                 </a>
                 <a href='https://github.com/ThayRibeiro0'>
