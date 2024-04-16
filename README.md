@@ -15,7 +15,7 @@ Improve my knowlegde using react, typescript and vite building my new portifolio
     <img src="https://img.shields.io/badge/-TypeScript-blue?logo=typescript" />
     <img src="https://img.shields.io/badge/HTML-E34F26?&logo=html5&logoColor=white&style=flat"  />
     <img src="https://img.shields.io/badge/CSS-3776AB?&logo=css3&logoColor=white&style=flat" />
-    <img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=flat" />
+    <img src="https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=flat" />
     <img src="https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=flat">
 </p>
 
