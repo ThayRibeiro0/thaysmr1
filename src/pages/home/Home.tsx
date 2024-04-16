@@ -41,7 +41,7 @@ const Home = () => {
         <ComputersCanvas />
       </div>
       <div className='hireme'>
-        <button onClick={toggleVideoPopup}>👇🏽 Watch 👇🏽</button>
+        <button onClick={toggleVideoPopup}>👇🏽 Video Introduction 👇🏽</button>
       </div>
 
       {showVideoPopup && (
