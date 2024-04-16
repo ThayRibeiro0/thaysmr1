@@ -58,9 +58,6 @@ base: "/repositoryname"
 
 after this run `npm run deploy` if run without error works, then its only go to github pages and wait appear the link and you can share your project with others users.
 
-Check my project: 
-By netlify: https://startling-pavlova-e998b6.netlify.app/
-
 ## Referencia
 
 Complete React Portfolio Website Project Tutorial - Create Personal Portfolio Website with React JS - https://www.youtube.com/watch?v=wFh0SJVDM9E
