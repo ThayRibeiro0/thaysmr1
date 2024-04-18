@@ -211,8 +211,10 @@ div.hireme button{
     position: relative;
     background-color: #fff;
     padding: 10px;
-    max-width: 80%;
-    max-height: 80%;
+    width: 100%; 
+    max-width: 580px; 
+    height: 44%; 
+    max-height: 70vh; 
     overflow: auto;
     text-align: center;
   }
@@ -228,10 +230,25 @@ div.hireme button{
     font-size: 1.5em;
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .video-popup {
-      max-width: 90%;
-      max-height: 90%;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      max-height: 100%;
+      overflow: auto;
+      z-index: 1;
+    }
+  
+    .video-popup iframe {
+      width: 300px;
+      height: 200px;
     }
   }
   
