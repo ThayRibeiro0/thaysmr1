@@ -45,7 +45,7 @@ export default function Portifolio() {
         </div>
         </SwiperSlide>
 
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div className='image2'>
             <img src={validform} alt="validform" />
           </div>
@@ -54,9 +54,9 @@ export default function Portifolio() {
             <p>Web application to collect the data and to validate them so that are faithful to what was required in the input and that they work correctly.</p><p><span className="textoColorido">#react</span><span className="textoColorido2">#html</span><span className="textoColorido3">#css</span></p>
             <a className='link' href='https://github.com/ThayRibeiro0/validform'>Access here</a>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
 
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div className='image3'>
             <img src={TodoApp} alt="TodoApp" />
           </div>
@@ -67,7 +67,7 @@ export default function Portifolio() {
           <div className='linkcss'>
             <a className='link' href='https://github.com/ThayRibeiro0/TodoApp'>Access here</a>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
 
         <SwiperSlide>          
           <div className='image4'>
@@ -80,7 +80,7 @@ export default function Portifolio() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>          
+        {/* <SwiperSlide>          
           <div className='image5'>
             <img src={GuessNumber} alt="GuessNumber" />
           </div>
@@ -89,7 +89,7 @@ export default function Portifolio() {
             <p>Java Programm in which the user have the provide a correct number trying to guess between a range that is show in each number typed</p><br/><p><span className="textoColorido7">#java</span></p>
             <a className='link' href='https://github.com/ThayRibeiro0/Guess_Number'>Access here</a>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
 
         <SwiperSlide>          
           <div className='image6'>
