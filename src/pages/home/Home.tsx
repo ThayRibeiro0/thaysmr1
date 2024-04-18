@@ -15,7 +15,7 @@ const Home = () => {
     <section className='home-container'>
       <div className='video-container'>
         <video autoPlay loop muted id='bg-video'>
-          <source src={background} type='video/mp4' />
+          <source className='videomp4' src={background} type='video/mp4' />
         </video>
       </div>
       <div className='content-text'>
