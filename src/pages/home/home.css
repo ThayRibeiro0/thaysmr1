@@ -288,16 +288,6 @@ div.hireme button{
     }
 }
 
-
-@media (max-width: 768px) {
-    .background-video {
-      width: 100%; 
-      height: 100%; 
-      object-fit: cover; 
-      pointer-events: none; 
-    }
-  }
-
 /* 
 @media (max-aspect-ratio: 16/9) {
     .bg-video {
