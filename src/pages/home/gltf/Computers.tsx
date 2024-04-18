@@ -26,9 +26,9 @@ const Computers: React.FC<ComputersProps> = ({ isMobile }) => {
       />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.18 : 0.20}
-        position={isMobile ? [0, -1.5, -0.2] : [0, -3.25, -1.9]}
-        rotation={[0.05, 0, 0]}
+        scale={isMobile ? 0.12 : 0.17}
+        position={isMobile ? [0, -1.5, -0.2] : [0, -1.50, -1.9]}
+        rotation={[0.08, 0, 0]}
       />
     </mesh>
   );
