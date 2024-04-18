@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { ChangeEvent, useRef, useState } from 'react';
 
 const Contact = () => {
-
+//
   const formRef = useRef<HTMLFormElement>(null); 
   const [form, setForm] = useState({
     name: '',
