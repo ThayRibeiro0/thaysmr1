@@ -1,264 +1,54 @@
-.skillssection{
+/* Typing Effect Styles */
+@import url('https://fonts.googleapis.com/css?family=Khula:700');
+
+.console-container {
+  font-family: Khula;
+  font-size: 5em;
+  text-align: center;
+  height: 200px;
   width: 100%;
-  height: 100%;
-  margin-top: 5%;
-  background: linear-gradient(white, rgb(112, 203, 213), white);
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #111;
+  position: relative;
 }
 
-.skills{
-  color: #484848;
-  font-size: 50px;
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.typing-effect {
+  display: inline;
+  font-family: 'Khula', sans-serif;
+  font-size: 2rem;
+  color: white;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+
+h1 span {
+  color: tomato; /* You can change this to whatever color you prefer */
   font-weight: bold;
-  font-family: monospace;
-  letter-spacing: 7px;
-  cursor: pointer
-}
-.skills span{
-  transition: .5s linear
-}
-.skills:hover span:nth-child(1){
-  margin-right: 5px
-}
-.skills:hover span:nth-child(1):after{
-  content: "'";
-}
-.skills:hover span:nth-child(2){
-  margin-left: 30px
-}
-.skills:hover span{
-  color: #fff;
-  text-shadow: 0 0 10px #2a0707,
-               0 0 20px #ca1212, 
-               0 0 40px #4e1c1c;
-}
-
-.puzzle{
-  margin-top: -5%;
-  margin-bottom: 7%;
-  font-size: 100px;
-}
-.settings{
-  margin-top: -10%;
-  margin-bottom: 5%;
-  font-size: 100px;
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .skills {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    
-  }
-  .skills1 {
-    text-align: center;
-    font-size: 13px;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  
-  .card-box{
-    border-top: 1px dashed rgb(224, 220, 220);
-    border-radius: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .autoplay-progress {
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-    z-index: 10;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .autoplay-progress svg {
-    --progress: 0;
-    position: absolute;
-    left: 0;
-    top: 0px;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    stroke-width: 4px;
-    stroke: black;
-    fill: none;
-    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
-    stroke-dasharray: 125.6;
-    transform: rotate(-90deg);
-  }
-  
-
-.swiper {
-    left: 15%;
-    width: 60%;
-    height: 40%;
-    padding: 5%;
-    display: flex;
-    border-radius: 5%;
-    margin-bottom: 10%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 30%;
-    height: 50%;
-    object-fit: cover;
-    border-radius: 5%;
-
-  }
-  
-  div.swiper-button-prev{
-    color: black;
-  }
-
-  div.swiper-button-next{
-    color: black;
-  }
-
-  svg{
-    stroke: black;
-  }
-
-  .swiper {
-    margin-left: 5%;
-    margin-right: 100%;
-  }
-
-.card-box{
-  columns: 2;
-  display: flex;
-}
-.card-container1{
-  border-radius: 50px;
-  position: relative;
-  display: flex;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 10%;
-  margin-right: 5%;
-  width: 500px;
-  height: 500px;
-  align-items: center;
-  background-image: url('../../image/Puzzle.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.3s ease-in-out;
-  
-}
-
-.card-container1:hover{
-  transform: scale(1.20);
-}
-
-.card-container2{
-  border-radius: 50px;
-  position: relative;
-  display: flex;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 10%;
-  width: 500px;
-  height: 500px;
-  align-items: center;
-  background-image: url('../../image/settings.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 5%;
-  transition: all 0.3s ease-in-out;
-  grid-template-columns: repeat(4, 2em);
-}
-
-.card-container2:hover{
-  transform: scale(1.20);
-}
-
-/* .card-box{
-  columns: 2;
-} */
-
-@media screen and (max-width: 768px) {
-  .card-box{
-    margin-top: 10%;
-  }
-  
-  .card-container{
-    max-width: 100%;
-    margin-right: 10px;
-    text-align: center;
-  }
-  .card-container1{
-    max-width: 100%;
-    text-align: center;
-  }
-  .card-container2{
-    max-width: 100%;
-    margin-left: -10px;
-    text-align: center;
-  }
-  .skills {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 500;
-    
-  }
-  .skills1 {
-    text-align: center;
-    font-size: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  
-  .card-container2:hover{
-    transform: scale(1.20);
-  } 
-  .swiper {
-    width: 80%;
-    margin-left: -4%;
-  }
-
-  .swiper-wrapper{
-    display: flex;
-  }
-  
 }

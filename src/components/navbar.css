@@ -1,164 +1,171 @@
+/* Estiliza o contêiner principal da barra de navegação */
 .nav {
-    position: relative;
-    z-index: 99
+    position: relative; /* Permite que os elementos filhos com position: absolute sejam posicionados em relação a este contêiner */
+    z-index: 2; /* Define a camada de empilhamento, garantindo que o navbar apareça acima de outros elementos */
 }
 
+/* Estiliza o menu da barra de navegação */
 .nav__menu {
-position: absolute;
-margin-left: 0.75rem;
-margin-right: 0.75rem;
-left: -105%;
-width: 50%;
-max-width: 230px;
-min-width: 230px;
-margin-left: 40%;
-background: linear-gradient(to right, rgb(30, 11, 12), rgb(163, 158, 158));
-display: table-cell;
-border-radius: 0.5rem;
-top: -1rem;
-z-index: 1;
-padding: 10px 16px;
-overflow: hidden;
-transition: all 0.9s cubic-bezier(0.77, 0.2, 0.05, 1);
-
+    position: absolute; /* Posiciona o menu em relação ao contêiner pai (.nav) */
+    left: -100%; /* Inicialmente, o menu está fora da tela à esquerda */
+    max-width: 230px;
+    min-width: 230px;
+    margin-left: 30%;
+    background: linear-gradient(to right, rgb(30, 11, 12), rgb(163, 158, 158));
+    display: table-cell; /* Faz com que o menu se comporte como uma célula de tabela */
+    border-radius: 3rem;
+    z-index: 1; /* Garante que o menu fique acima de outros elementos dentro de .nav */
+    padding: 10px 26px;
+    overflow: hidden;
+    transition: all 0.9s cubic-bezier(0.77, 0.2, 0.05, 1); /* Animação suave ao abrir/fechar o menu */
 }
 
-.show-menu{
-left: 0;
+/* Classe que mostra o menu quando ativada */
+.show-menu {
+    left: 0; /* Posiciona o menu na tela */
 }
 
+/* Estiliza os links dentro do menu de navegação */
 .nav__link {
-display: flex;
-align-items: center;
-text-decoration: none;
-column-gap: 24px;
-justify-content: center;
-padding-block: 14px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    column-gap: 24px;
+    justify-content: center;
+    padding-block: 14px;
 }
 
+/* Estiliza os ícones e nomes dentro dos links */
 .nav__icon,
 .nav__name {
-color: white;
+    color: white;
 }
 
+/* Estiliza o nome dos links */
 .nav__name {
-font-weight: 500;
-text-decoration: none;
+    font-weight: 500;
+    text-decoration: none;
 }
 
+/* Estiliza os ícones e nomes quando o item está ativo */
 .active-nav .nav__icon,
 .active-nav .nav__name {
-color: white;
+    color: white;
 }
 
-/* menu */
+/* Estiliza o botão de alternância do menu (hambúrguer) */
 .nav__toggle {
-position: absolute;
-cursor: pointer;
-top: -50px;
-right: 30px;
-width: 40px;
-height: 40px;
-border-radius: 5px;
-padding: 12px 10px;
+    position: absolute;
+    cursor: pointer;
+    top: -40px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 12px 10px;
 }
 
-
-
+/* Estiliza as linhas do botão de alternância */
 .nav__toggle span {
-display: block;
-width: 20px;
-height: 2px;
-border-radius: 2px;
-background-color: black;
-margin-bottom: 5px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: black;
+    margin-bottom: 5px;
 }
 
+/* Animação do botão de alternância quando o menu está visível */
 .animate-toggle span:first-child {
-transform: rotate(45deg) translate(6px, 4px);
+    transform: rotate(45deg) translate(6px, 4px);
 }
 
 .animate-toggle span:nth-child(2) {
-display: none;
-}
-
-.animate-toggle span:last-child {
-transform: rotate(-45deg) translate(1px, 1px);
-}
-
-
-@media screen and (min-width: 1024px) {
-
-.nav__menu{
-    all: unset;
-}
-
-.nav__toggle{
     display: none;
 }
 
-.nav {
-    position: fixed;
-    inset-block: 0;
-    right: 30px;
-    display: flex;
-    align-items: center;
+.animate-toggle span:last-child {
+    transform: rotate(-45deg) translate(1px, 1px);
 }
 
-.nav__item {
-    margin-block: 20px;
-    list-style-type: none;
-}
+/* Estilos específicos para Desktop (a partir de 1024px de largura) */
+@media screen and (min-width: 1024px) {
 
-.nav__link {
-    padding: 0;
-    border-bottom: none;
-    background-color: gray;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: relative;
-}
+    .nav__menu {
+        all: unset; /* Remove todos os estilos anteriores para telas grandes */
+    }
 
-.nav__icon {
-    font-size: 20px;
-    margin-inline: auto;
-}
+    .nav__toggle {
+        display: none; /* Oculta o botão de alternância em telas grandes */
+    }
 
-.nav__name {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgb(30, 11, 12);
-    height: 100%;
-    line-height: 50px;
-    padding-inline: 30px 25px;
-    border-radius: 30px;
-    font-size: 16px;
-    color: white;
-    opacity: 0;
-    visibility: hidden;
-    z-index: -1;
-    transition: all 0.3s ease;
-}
+    .nav {
+        position: fixed; /* Fixa a navegação na tela */
+        inset-block: 0; /* Define o posicionamento para todos os lados */
+        right: 30px;
+        display: flex;
+        align-items: center;
+    }
 
-.nav__link:hover .nav__name {
-    right: 27px;
-    color: white;
-    opacity: 1;
-    visibility: visible;
-    border-radius: 30px 0 0 30px;
-}
+    /* Estiliza os itens do menu na barra de navegação */
+    .nav__item {
+        margin-block: 20px;
+        list-style-type: none; /* Remove os marcadores das listas */
+    }
 
-.nav__link:hover,
-.active-nav {
-    background-color: rgb(30, 11, 12) ;
-}
+    /* Estiliza os links dentro da navegação na tela grande */
+    .nav__link {
+        padding: 0;
+        border-bottom: none;
+        background-color: gray;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+    }
 
-.nav__link:hover .nav__icon,
-.active-nav .nav__icon {
-    color: white;
-}
+    /* Estiliza o ícone dentro dos links */
+    .nav__icon {
+        font-size: 20px;
+        margin-inline: auto;
+    }
 
+    /* Estiliza o nome dentro dos links */
+    .nav__name {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(30, 11, 12);
+        height: 100%;
+        line-height: 50px;
+        padding-inline: 30px 25px;
+        border-radius: 30px;
+        font-size: 16px;
+        color: white;
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        transition: all 0.3s ease; /* Animação suave ao passar o mouse */
+    }
 
+    /* Estilo quando o link é passado com o mouse */
+    .nav__link:hover .nav__name {
+        right: 27px;
+        color: white;
+        opacity: 1;
+        visibility: visible;
+        border-radius: 30px 0 0 30px;
+    }
+
+    /* Estilo quando o link é passado com o mouse ou o link está ativo */
+    .nav__link:hover,
+    .active-nav {
+        background-color: rgb(30, 11, 12);
+    }
+
+    /* Estilo do ícone quando o link é passado com o mouse ou o link está ativo */
+    .nav__link:hover .nav__icon,
+    .active-nav .nav__icon {
+        color: white;
+    }
 }

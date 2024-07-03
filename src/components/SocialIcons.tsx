@@ -1,17 +1,14 @@
+import { Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { IoIosDocument } from "react-icons/io";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './socialIcons.css';
 import Pdf from '../../src/assets/1- Thays Ribeiro Maher.pdf'
 
-import { Container } from 'react-bootstrap';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { IoIosDocument } from "react-icons/io";
-
 export const SocialIcons = () => {
 
   return (
-    <div>
         <Container className='socialicons'>
             <div className='singleCol social-media-icons-white d-flex justify-content-evenly'>
                 <a href='https://www.linkedin.com/in/thays-ribeiro-maher-475b39275/'>
@@ -25,7 +22,7 @@ export const SocialIcons = () => {
                 </a>
             </div>
         </Container>
+  );
+};
 
-    </div>
-  )
-}
+export default SocialIcons;

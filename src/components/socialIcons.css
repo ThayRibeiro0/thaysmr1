@@ -1,23 +1,37 @@
-.singleCol{
+/* Container for social icons */
+.singleCol {
     max-width: 100%;
     margin-top: 5%;
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
 }
 
-.social-media-icons-white{
-    font-size: 2rem;
-    position: relative;
-    width: 20%;
+/* Flex container for social media icons */
+.social-media-icons-white {
+    font-size: 3rem; /* Size of the icons */
+    display: flex;
+    justify-content: center; /* Center icons horizontally within the container */
+    gap: 1rem; /* Add space between icons */
+    width: auto; /* Adjust width to fit content */
     height: auto;
 }
 
+/* Icon styling */
 .icon {
-    color: black;
+    color: black; /* Icon color */
+    transition: color 0.3s; /* Smooth color transition on hover */
 }
 
-@media screen and (max-width: 768px) {
-    .social-media-icons-white{
-        margin-top: 20%;
-        width: 50%;
-        justify-content: center;
+/* Hover effect for icons */
+.icon:hover {
+    color: #007bff; /* Change color on hover, e.g., Bootstrap's primary color */
 }
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    .social-media-icons-white {
+        margin-top: 20%;
+        font-size: 3rem; /* Adjust font size for smaller screens */
+        width: 50%; /* Adjust width for smaller screens */
+    }
 }
