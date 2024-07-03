@@ -1,4 +1,3 @@
-import React from 'react';
 import Typography from '@mui/material/Typography';
 import { Memory } from '@mui/icons-material';
 import { styled } from '@mui/material/styles';

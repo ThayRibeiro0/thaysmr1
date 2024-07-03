@@ -52,3 +52,36 @@ h1 span {
   color: tomato; /* You can change this to whatever color you prefer */
   font-weight: bold;
 }
+
+/* SkillsPage.css */
+
+.outer-box {
+  display: flex;
+  margin: 10px;
+  padding: 16px;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.left-box {
+  flex: 1;
+  padding-right: 0;
+  text-align: center;
+}
+
+.right-box {
+  flex: 5;
+  margin-top: 16px;
+}
+
+@media (min-width: 600px) {
+  .outer-box {
+    flex-direction: row;
+  }
+  .left-box {
+    padding-right: 16px;
+  }
+  .right-box {
+    margin-top: 0;
+  }
+}
